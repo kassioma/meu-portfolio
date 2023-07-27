@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 
 :root {
-    --purple: #5280E2;
+    --purple: #4E4FEB;
     --green: #15CDCB;
     --bg-dark: #212226;
     --light-grey: #E0DEDE;
+
+    --menu-heigth: 75px;
 }
 
 * {
@@ -44,7 +46,7 @@ button {
 }
 
 header {
-    height: calc(100vh - 65px);
+    height: calc(100vh - var(--menu-heigth));
     display: flex;
     align-items: center;
 }
@@ -61,4 +63,32 @@ header .container h1 {
 
 header .container button {
     margin-top: 40px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: var(--menu-heigth);
+    background: var(--bg-dark);
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+}
+
+nav img {
+    height: 45px;
+}
+
+nav ul a {
+    font-size: 23px;
+    color: var(--green);
+    text-decoration: none;
+    margin: 0 35px;
+
+}
+
+section {
+    height: 1500px;
+    background: purple;
 }
