@@ -134,10 +134,7 @@ section {
         display: none;
     }
 
-    nav ul {
-        padding: 0;
-    }
-
+    nav ul { 
     nav ul a {
         font-size: 16px;
     }
@@ -150,6 +147,10 @@ section {
     }
 
     nav {
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        top: unset;
         padding: 0 15px;
     }
 
