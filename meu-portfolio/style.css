@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400; 600&display=swap');
 
 :root {
     --purple: #4E4FEB;
@@ -45,6 +45,14 @@ button {
     font-weight: bold; 
 }
 
+.title-purple {
+    color: var(--purple);
+}
+
+.title-green {
+    color: var(--green);
+}
+
 header {
     height: calc(100vh - var(--menu-heigth));
     display: flex;
@@ -59,10 +67,6 @@ header .container {
 
 header .container img {
     display: none;
-}
-
-header .container h1 {
-    color: var(--green);
 }
 
 header .container button {
@@ -100,9 +104,23 @@ nav ul svg {
     display: none;
 }
 
-section {
-    height: 1500px;
-    background: purple;
+.about-me {
+    display: flex;
+    padding: 100px;
+}
+ 
+.about-me .container {
+    width: 50%;
+    padding-right: 50px;
+}
+
+.about-me .img-container {
+    width: 50%;
+    text-align: center;
+}
+ 
+.about-me .img-container img {
+    width: 50%;
 }
 
 /*Responsividade*/
